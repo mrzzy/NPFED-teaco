@@ -1,0 +1,10 @@
+#
+# .gitignore
+# Teaco
+# Git Ignore
+#
+
+*.sw?
+._*
+.DS_Store
+tags
