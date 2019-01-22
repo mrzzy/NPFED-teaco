@@ -6,7 +6,7 @@
 
         <title> TEACO </title>
 
-        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:500,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <link type="text/css" rel="stylesheet" href="css/teaco.css"/>
         <script type="text/javascript" src="js/teaco.js"></script>
@@ -15,45 +15,44 @@
         <header>
             <nav id="nav-bar">
                 <img alt="Navigate" id="expand-header" class="icon hamburger action" src="images/Hamburger.png"/>
-                <span class="nav-item"> about </span>
-                <span class="nav-item"> menu </span>
-                <span class="nav-item"> coffee </span>
-                <span class="nav-item" id="homepage">
-                    <a href="index.html">
-                        <img class="logo" alt="Teaco Homepage" src="images/logo@2x.png"/>
-                    </a>
-                </span>
-                <span class="nav-item"> tea </span>
-                <span class="nav-item"> order </span>
-                <span class="nav-item"> credits </span>
+                <a href="about.html" class="nav-item"> about </a>
+                <a href="menu.html" class="nav-item"> menu </a>
+                <a href="coffee.html" class="nav-item"> coffee </a>
+                <a href="index.html" class="nav-item homepage">
+                    <img class="logo" alt="Teaco Homepage" src="images/logo@2x.png"/>
+                </a>
+                <a href="tea.html" class="nav-item"> tea </a>
+                <a href="order.html" class="nav-item"> order </a>
+                <a href="credits.html" class="nav-item"> credits </a>
                 <img alt="Cancel" id="collapse-header" class="icon cancel action" src="images/Cancel.png"/>
             </nav>
         </header>
         <footer>
-            <section class="watermark">
-                <img class="logo" alt="Teaco Homepage" src="images/logo b-w.png"/>
-                <div class="description">
-                    designed and developed by Teaco
-                </div>
-            </section>
-            <section class="navigation">
-                <nav>
-                    <span class="nav-item"> home</span>
-                    <span class="nav-item"> about </span>
-                    <span class="nav-item"> menu </span>
-                    <span class="nav-item"> coffee </span>
-                    <span class="nav-item"> tea </span>
-                    <span class="nav-item"> order </span>
-                    <span class="nav-item"> credits </span>
-                </nav>
-            </section>
-            <section class="contact">
-                <form id="contact">
-                    <input name="name" type="text" placeholder="name"/>
-                    <input name="email" type="text" placeholder="name"/>
-                    <textarea name="message" placeholder="message" rows="6" cols="40"></textarea>
-                </form>
-            </section>
+            <div class="flex-container">
+                <section class="watermark">
+                    <img class="logo" alt="Teaco Homepage" src="images/watermark@2x.png"/>
+                </section>
+                <section class="navigation">
+                    <nav>
+                        <a href="index.html" class="nav-item homepage"> home </a>
+                        <a href="about.html" class="nav-item"> about </a>
+                        <a href="menu.html" class="nav-item"> menu </a>
+                        <a href="coffee.html" class="nav-item"> coffee </a>
+                        <a href="tea.html" class="nav-item"> tea </a>
+                        <a href="order.html" class="nav-item"> order </a>
+                        <a href="credits.html" class="nav-item"> credits </a>
+                    </nav>
+                </section>
+                <section class="contact">
+                    <form id="contact">
+                        <span class="header">  Contact Us. </span>
+                        <fieldset><input required name="name" type="text" placeholder="name"/></fieldset>
+                        <fieldset><input required name="email" type="text" placeholder="email"/></fieldset>
+                        <fieldset><textarea required name="message" placeholder="message" rows="6" cols="34"></textarea></fieldset>
+                        <button type="submit"> <img alt="Send" src="images/Send@2x.png"/> </button>
+                    </form>
+                </section>
+            </div>
         </footer>
     </body>
 </html>
