@@ -9,21 +9,25 @@
         <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <link type="text/css" rel="stylesheet" href="css/teaco.css"/>
+        <script type="text/javascript" src="js/teaco.js"></script>
     </head>
     <body>
-        <header class="fixed">
+        <header>
             <nav id="nav-bar">
+                <img alt="Navigate" id="expand-header" class="icon hamburger action" src="images/Hamburger.png"/>
                 <span class="nav-item"> about </span>
                 <span class="nav-item"> menu </span>
                 <span class="nav-item"> coffee </span>
-                <span class="nav-item">
-                    <img class="logo" alt="Teaco Homepage" src="images/logo@2x.png"/>
+                <span class="nav-item" id="homepage">
+                    <a href="index.html">
+                        <img class="logo" alt="Teaco Homepage" src="images/logo@2x.png"/>
+                    </a>
                 </span>
                 <span class="nav-item"> tea </span>
                 <span class="nav-item"> order </span>
                 <span class="nav-item"> credits </span>
+                <img alt="Cancel" id="collapse-header" class="icon cancel action" src="images/Cancel.png"/>
             </nav>
         </header>
-    
     </body>
 </html>

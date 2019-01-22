@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+.icon {
+    object-fit: contain;
+}
+
 /* Header/Navbar styling */
 header {
     text-align: center;
@@ -26,7 +30,7 @@ nav {
 
 .nav-item {
     margin: auto;
-    opacity: 0.89;
+    opacity: 0.82;
     font-size: 1.2em;
 }
 
@@ -34,8 +38,14 @@ nav {
     opacity: 1;
     object-fit: contain;
     width: 8vw;
+    min-width: 2.4em;
 }
 
+nav .icon.hamburger, nav .icon.cancel {
+    display: none;
+}
+
+/* Fixed header on scroll */
 header.fixed {
     position: fixed;
     width: 100vw;
@@ -43,5 +53,65 @@ header.fixed {
 }
 
 header.fixed .nav-item img.logo {
-    width: 3.6vw;
+    width: 4vw;
 }
+
+/* Responsive Header */
+@media only screen and (max-width: 600px) {
+    /* Collapsed Responsive Header */
+    nav {
+        display: block;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    nav .icon.hamburger {
+        position: relative;
+        top: 0.8em;
+        left: 0.8em;
+        display: block;
+        object-fit: contain;
+        float: left;
+    }
+
+    .nav-item {
+        display: none;
+        margin: 0;
+    }
+
+    .nav-item#homepage {
+        display: inline-block;
+    }
+    
+    /* Expanded Responsive Header */
+    header.expanded {
+        position: fixed;
+    }
+
+    header.expanded nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        width: 100vw;
+        min-height: 12em;
+    }
+
+    header.expanded nav .icon.hamburger {
+        display: none;
+    }
+
+    header.expanded nav .icon.cancel {
+        display: inline-block;
+    }
+
+    header.expanded nav .nav-item {
+        display: block;
+    }
+
+    header.expanded nav .nav-item#homepage {
+        display: block;
+        order: -100;
+    }
+}
+
