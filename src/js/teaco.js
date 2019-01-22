@@ -31,3 +31,17 @@ $(document).ready(() => {
         $("header").removeClass("expanded");
     });
 });
+
+/* Add header and footer
+ * On separate html files
+*/
+ $(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+
+// For Tea page
+window.onload = function() {
+    $('#tea_title').delay(600).animate({'opacity':'1'},800);
+    $('#tea_caption').delay(1000).animate({'opacity':'1'},800);   
+}
