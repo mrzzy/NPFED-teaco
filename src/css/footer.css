@@ -1,0 +1,151 @@
+/* 
+ * css/footer.css
+ * TEACO
+ * 
+*/
+
+/* Footer */
+footer {
+    background-color: #0B0D0B;
+    color: #FFFFFF;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+footer .flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 72vw;
+}
+
+footer .flex-container > * {
+    width: 28vw;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: inherit;
+    height: 100%;
+}
+
+footer .nav-item {
+    color: #FFFFFF;
+}
+
+footer .watermark {
+    position: relative;
+}
+
+footer .watermark img.logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    object-fit: contain;
+    width: 10vw;
+    min-width: 8em;
+}
+
+/* Footer contact form */
+footer form#contact {
+    text-align: left;
+}
+
+footer form#contact .header {
+    font-size: 2.4em;
+    font-size: bold;
+}
+
+footer form#contact fieldset {
+    padding: 0;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    border-style: none;
+}
+
+footer form#contact input[type='text'], textarea {
+    width: 20vw;
+    background-color: #5A5A5A;
+    border-radius: 4pt;
+    color: #DCDCDC;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    border-style: none;
+    padding: 0.8em;
+    transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+footer form#contact textarea {
+    resize: none;
+}
+
+footer form#contact input[type='text']:focus , textarea:focus {
+    color: #FFFFFF;
+    background-color: #656565;
+}
+
+footer form#contact button[type='submit'] {
+    margin-top: 0.8em;
+    float: right;
+    padding: 0;
+    background-color: transparent;
+    border-style: none;
+    opacity: 0.85;
+    transition: opacity 0.01s ease;
+}
+
+footer form#contact button[type='submit']:hover {
+    opacity: 1;
+}
+
+footer form#contact button[type='submit']:active {
+    opacity: 0.6
+}
+
+footer form#contact button[type='submit'] img {
+    object-fit: contain;
+    width: 8em;
+}
+
+/* Responsive Footer */
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+
+    footer .flex-container {
+        display: inline-block;
+    }
+    
+    footer .flex-container > * {
+        width: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+    }
+
+    footer form#contact input[type='text'], textarea {
+        display: inline-block;
+        width: 64vw;
+    }
+    
+    footer form#contact {
+        text-align: center;
+    }
+
+    footer .watermark img.logo {
+        display: inline-block;
+        position: static;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
