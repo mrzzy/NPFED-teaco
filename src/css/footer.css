@@ -114,3 +114,38 @@ footer form#contact button[type='submit'] img {
 }
 
 /* Responsive Footer */
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+
+    footer .flex-container {
+        display: inline-block;
+    }
+    
+    footer .flex-container > * {
+        width: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+    }
+
+    footer form#contact input[type='text'], textarea {
+        display: inline-block;
+        width: 64vw;
+    }
+    
+    footer form#contact {
+        text-align: center;
+    }
+
+    footer .watermark img.logo {
+        display: inline-block;
+        position: static;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
