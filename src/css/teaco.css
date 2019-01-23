@@ -43,18 +43,18 @@ body {
 }
 .tea_title {
     color: #7EBDC2;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 6em;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gentium Basic', sans-serif;
 }
 
 .tea_caption {
     color: #323029;
-    font-family: 'Gentium Basic', serif;
-    font-size: 4.6em;
+    font-family: 'Open Sans', serif;
+    font-size: 3.6em;
     margin: 0;
     padding: 0;
 }
@@ -64,6 +64,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #a9d5cb;
+    margin-bottom: 4%;
 }
 
 .product {
@@ -123,6 +124,10 @@ body {
     .tea {
         width: 100%;
         margin-bottom: 2%;
+    }
+
+    .tea_container {
+        justify-content: space-around;
     }
 
     .tea_text {
