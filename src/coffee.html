@@ -118,15 +118,23 @@
                     </br><br />
 
                     <label for="name">Name: </label>
-                    <input required type="text" id="customerName" placeholder="Please enter your name">
+                    <input required type="text" id="customerName" placeholder="Name">
                     </br><br />
 
                     <label for="country">Country: </label>
-                    <input required type="text" id="countryInput" onchange="countryTextUpdate()" placeholder="Please enter country">
+                    <input required type="text" id="countryInput" onchange="countryTextUpdate()" placeholder="Country">
+                    <br /><br />
+
+                    <label for="city">City: </label>
+                    <input type="text" id="cityInput" onchange="countryTextUpdate()" placeholder="City">
+                    <br /><br />
+
+                    <label for="street">Street: </label>
+                    <input type="text" id="streetInput" onchange="countryTextUpdate()" placeholder="Street">
                     <br /><br />
 
                     <label for="email">Email: </label>
-                    <input required type="email" id="emailInput" placeholder="Please enter your email" />
+                    <input required type="email" id="emailInput" placeholder="Email" />
                     <br /><br />
 
                     <input type="submit" value="Submit" onsubmit="submission()">

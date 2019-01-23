@@ -55,12 +55,8 @@ header, footer {
     padding:70px 70px
 }
 
-.roastType {
-    height: 1000px;
-}
-
-.form {
-    height: 700px;
+.roastType, .form {
+    height: 800px;
 }
 
 a {

@@ -32,7 +32,7 @@ function calculateCoffee() {
 }
 
 function countryTextUpdate() {
-    document.getElementById("countryText").innerHTML = `The country of import is: ${document.getElementById('countryInput').value}`;
+    document.getElementById("countryText").innerHTML = `We will be importing it to ${document.getElementById('countryInput').value} ${document.getElementById('cityInput').value} ${document.getElementById('streetInput').value}`;
 }
 
 function submission() {
