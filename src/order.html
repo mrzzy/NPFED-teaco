@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guhesh Nalachandiran" />
+    <meta name="description" content="Order form" />
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:500,700" rel="stylesheet">
+    <title>Order Form</title>
+    <link type="text/css" rel="stylesheet" href="css/teaco.css" />
+    <link type="text/css" rel="stylesheet" href="css/header.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <img alt="Navigate" id="expand-header" class="icon hamburger action" src="images/Hamburger.png" />
+            <a href="about.html" class="nav-item"> about </a>
+            <a href="menu.html" class="nav-item"> menu </a>
+            <a href="coffee.html" class="nav-item"> coffee </a>
+            <a href="index.html" class="nav-item homepage">
+                <img class="logo" alt="Teaco Homepage" src="images/logo@2x.png" />
+            </a>
+            <a href="tea.html" class="nav-item"> tea </a>
+            <a href="order.html" class="nav-item"> order </a>
+            <a href="credits.html" class="nav-item"> credits </a>
+            <img alt="Cancel" id="collapse-header" class="icon cancel action" src="images/Cancel.png" />
+        </nav>
+    </header>
+    <h1>Menu.</h1>
+    <div><h2>Food.</h2></div>
+    <div>
+        <div><h4>Pasta</h4></div>
+        <ol>
+            <li>Arabiatta</li>
+            <li>Carbonara</li>
+            <li>Bolognese</li>
+        </ol>
+        <h4>Pizza</h4>
+        <ol start="4">
+            <li>Margherita</li>
+            <li>Diavola</li>
+            <li>Parma</li>
+        </ol>
+
+    </div>
+    <form>
+        <h1>TEACO Order Form</h1>
+
+<h2>Food.</h2>
+        <p>
+            <fieldset class="Food" name="Arabiatta">
+                <legend>Arabiatta</legend>
+                <label for="qty">Quantity:</label>
+                <input type="number" min="0" value="0" name="qty" />
+                <fieldset name="Size">
+                    <legend>Size:</legend>
+                    <input type="radio" name="Size" value="Small" required />Small
+                    <input type="radio" name="Size" value="Medium" />Medium
+                    <input type="radio" name="Size" value="Large" />Large
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <input type="checkbox" name="Topping" value="Meatballs" />Meatballs
+                    <input type="checkbox" name="Topping" value="Bacon" />Bacon
+                    <input type="checkbox" name="Topping" value="Chicken" />Chicken
+                </fieldset>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset class="Food" name="Bolognese">
+                <legend>Bolognese</legend>
+                <label for="qty">Quantity:</label>
+                <input type="number" min="0" value="0" name="qty" />
+                <fieldset name="Size">
+                    <legend>Size:</legend>
+                    <input type="radio" name="Size" value="Small" required />Small
+                    <input type="radio" name="Size" value="Medium" />Medium
+                    <input type="radio" name="Size" value="Large" />Large
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <input type="checkbox" name="Topping" value="Meatballs" />Meatballs
+                    <input type="checkbox" name="Topping" value="Bacon" />Bacon
+                    <input type="checkbox" name="Topping" value="Chicken" />Chicken
+                </fieldset>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset class="Food" name="Carbonara">
+                <legend>Carbonara</legend>
+                <label for="qty">Quantity:</label>
+                <input type="number" min="0" value="0" name="qty" />
+                <fieldset name="Size">
+                    <legend>Size:</legend>
+                    <input type="radio" name="Size" value="Small" required />Small
+                    <input type="radio" name="Size" value="Medium" />Medium
+                    <input type="radio" name="Size" value="Large" />Large
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <input type="checkbox" name="Topping" value="Meatballs" />Meatballs
+                    <input type="checkbox" name="Topping" value="Bacon" />Bacon
+                    <input type="checkbox" name="Topping" value="Chicken" />Chicken
+                </fieldset>
+            </fieldset>
+        </p>
+        <h2>Drinks.</h2>
+
+        <h3>Tea</h3>
+
+        <p>
+            <fieldset class="Tea" name="Tea">
+                <legend>Tea:</legend>
+                <input type="radio" name="" value="Thin" required />Thin
+                <input type="radio" name="Crust" value="Thick" />Thick
+                <input type="radio" name="Crust" value="DeepDish" />Deep Dish
+            </fieldset>
+        </p>
+
+
+
+        <fieldset>
+            <legend>Deliver to:</legend>
+            <p>
+                <label for="iName">Name:</label>
+                <input id="iName" name="Name" type="text" autocomplete="name" required />
+            </p>
+            <p>
+                <label for="iAddress">Address:</label>
+                <textarea id="iAddress" rows="2" cols="30" name="Address" autocomplete="Address" required></textarea>
+                <label for="iPostaCode">Postal Code:</label>
+                <input type="text" maxlength="6" size="6" name="Zip" required pattern="\d{6}" />
+            </p>
+            <p>
+                <label for="telephone">Phone #:</label>
+                <input type="tel" id="telephone" name="Phone" size="8" pattern="[689]\d{7}" />
+            </p>
+            <p>
+                <label for="iEmail">Email:</label>
+                <input type="email" name="Email" size="50" placeholder="Enter email addresses" required />
+            </p>
+            <p>
+                <label for="iDate">Date:</label>
+                <input type="date" name="Date" min="2018-10-29" max="2018-11-04"
+                       placeholder="mm/dd/yy" required />
+                <label for="iTime">Time:</label>
+                <input type="time" name="Time" value="10:00" min="10:00" max="22:00"
+                       step="900" required />
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit">
+        <input type="reset" value="Reset" name="reset" id="reset" />
+
+    </form>
+    <footer>
+        <div class="flex-container">
+            <section class="watermark">
+                <img class="logo" alt="Teaco Homepage" src="images/watermark@2x.png" />
+            </section>
+            <section class="navigation">
+                <nav>
+                    <a href="index.html" class="nav-item"> home </a>
+                    <a href="about.html" class="nav-item"> about </a>
+                    <a href="menu.html" class="nav-item"> menu </a>
+                    <a href="coffee.html" class="nav-item"> coffee </a>
+                    <a href="tea.html" class="nav-item"> tea </a>
+                    <a href="order.html" class="nav-item"> order </a>
+                    <a href="credits.html" class="nav-item"> credits </a>
+                </nav>
+            </section>
+            <section class="contact">
+                <form id="contact">
+                    <span class="header">  Contact Us. </span>
+                    <fieldset><input required name="name" type="text" placeholder="name" /></fieldset>
+                    <fieldset><input required name="email" type="text" placeholder="email" /></fieldset>
+                    <fieldset><textarea required name="message" placeholder="message" rows="6" cols="34"></textarea></fieldset>
+                    <button type="submit"> <img alt="Send" src="images/Send@2x.png" /> </button>
+                </form>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
