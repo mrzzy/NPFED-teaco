@@ -57,7 +57,7 @@ header.fixed {
     top: 0;
     left: 0;
     width: 100vw;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.062);
 }
 
 header.fixed .nav-item img.logo {

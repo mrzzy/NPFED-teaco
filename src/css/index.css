@@ -1,0 +1,54 @@
+/*
+ * css/index.css
+ * TEACO
+ * TEACO Home Page Styling
+*/
+
+main {
+    text-align: center;
+}
+
+main img.hero {
+    display: inline-block;
+    width: 80vw;
+    object-fit: contain;
+}
+
+main .glossary {
+    display: inline-block;
+    width: 80vw;
+    padding-bottom: 4vh;
+}
+
+main .glossary .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 4vh;
+    justify-content: space-between;
+}
+
+main .glossary img {
+    object-fit: contain;
+    width: 22vw;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+main a:hover img {
+    opacity: 0.88;
+}
+
+@media only screen and (max-width: 480pt) {
+    main .glossary .grid-container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 2vh;
+        justify-content: center;
+    }
+
+    main .glossary img {
+        width: 60vw;
+    }
+}
+
