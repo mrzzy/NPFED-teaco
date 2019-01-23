@@ -18,3 +18,134 @@ main {
     text-align: center;
 }
 
+.tea_wrapper {
+    padding: 0 2% 0 2%;
+    display: flex;
+}
+
+.fade {
+}
+
+.tea_container {
+    display: flex;
+    justify-content: left;
+    background-color: #f6f5d7;
+    background-image: url(../images/teaBG.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+}
+
+.tea_text {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+.tea_title {
+    color: #7EBDC2;
+    font-weight: 700;
+    font-size: 6em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gentium Basic', sans-serif;
+}
+
+.tea_caption {
+    color: #323029;
+    font-family: 'Open Sans', serif;
+    font-size: 3.6em;
+    margin: 0;
+    padding: 0;
+}
+
+.product_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #a9d5cb;
+    margin-bottom: 4%;
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    padding: 3% 0 3% 0;
+}
+
+.product1 {
+    background-color: #a9d5cb;
+}
+
+.product2 {
+    background-color: #FF8552;
+}
+
+.product3 {
+    background-color: #297373;
+}
+
+.product_name {
+    color: #323029;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product_desc {
+    color: #303637;
+    font-family: 'Gentium Basic', serif;
+    font-size: 2.4em;
+    margin: 1% 10% 1% 10%;
+    padding: 0;
+}
+
+.tea {
+    width: 25%;
+    height: 80vh;
+    background-color: #EEEBDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0 1% 0;
+    border-radius: 7px;
+    border: 1px solid #AEACA5;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .products {
+        flex-direction: column;
+    }
+    .tea {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .tea_container {
+        justify-content: space-around;
+    }
+
+    .tea_text {
+        width: 100%;
+    }
+
+    .tea_title {
+        font-size: 3em;
+        text-align: center;
+        color: #eb9486;
+    }
+
+    .tea_caption {
+        font-size: 2em;
+        text-align: center;
+    }
+}

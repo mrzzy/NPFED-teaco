@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>TEACO | Tea</title>
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/teaco.css"/>
+        <link type="text/css" rel="stylesheet" href="css/header.css"/>
+        <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/teaco.js"></script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <section>
+            <div class="tea_wrapper">
+                <div class="tea_container">
+                    <div class="tea_text">
+                        <div>
+                            <p class="tea_title fade" id="tea_title">Tea & Infusions</p>
+                            <p class="tea_caption fade" id="tea_caption">
+                                Fill up your cup with our<br> latest
+                                and greatest blend<br> of herbs and spices
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section>
+                <div class="tea_wrapper">
+                    <div class="product_container">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="product product1">
+                                        <div class="tea">
+                                            <p class="product_name">Earl Grey</p>
+                                            <p class="product_desc">One of the most recognizable flavours of tea in the world. A quintessential afternoon tea.</p>
+                                            <img src="images/earlgrey.png" alt="earlgrey" width="70%"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="product product2">
+                                        <div class="tea">
+                                            <p class="product_name">Vanilla Slice</p>
+                                            <p class="product_desc">One of the most recognizable flavours of tea in the world. A quintessential afternoon tea.</p>
+                                            <img src="images/vanillaslice.png" alt="vanillaslice" width="70%"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="product product3">
+                                        <div class="tea">
+                                            <p class="product_name">Green Rose</p>
+                                            <p class="product_desc">One of the most recognizable flavours of tea in the world. A quintessential afternoon tea.</p>
+                                            <img src="images/greenrose.png" alt="greenrose" width="70%"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>

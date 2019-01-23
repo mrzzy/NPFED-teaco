@@ -31,3 +31,12 @@ $(document).ready(() => {
         $("header").removeClass("expanded");
     });
 });
+
+/* Add header and footer
+ * On separate html files
+*/
+ $(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+
