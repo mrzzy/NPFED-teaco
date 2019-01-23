@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Heng Zi Hui">
+    <meta name="description" content="Assignment 2 Coffee Page">
+    <link rel="stylesheet" href="css/coffee.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One|Roboto:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/teaco.js"></script>
+    <title>Coffee</title>
+</head>
+<body data-gr-c-s-loaded="true">
+    <header id="header"></header>
+
+    <main>
+        <div class="parallaxImg1">
+            <div class="caption1">
+                <span class="border">COFFEE</span>
+            </div>
+        </div>
+
+        <div class="section1" id="section1" style="background-color:white">
+            <section class="sect1div1">
+                <img src="images/Arabica.png" class="arabicaPic" alt="Arabica Coffee Beans">
+            </section>
+            <section class="sect1div2">
+                <h1>Arabica Coffee Beans</h1>
+                <p>Our bestseller coffee bean! One of the most fragrant and rich tasting beans we provide. It is equipped with a pleasant acidity and a little bitterness completed with a slightly sweet flavour with hints of chocolate, nuts and caramel.</p>
+                <a href="#section2">Click for roast type</a>
+            </section>
+        </div>
+
+        <div class="section2" id="section1" style="background-color:antiquewhite">
+            <section class="sect2div1">
+                <img src="images/robusta.png" class="robustaPic" alt="Robusta Coffee Beans">
+            </section>
+            <section class="sect2div2">
+                <h1>Robusta Coffee Beans</h1>
+                <p>Get your fill of caffine with our robusta beans! Prefer a more earthy and bitter taste? Check out our robusta coffee beans. Definetly not one to be missed.</p>
+                <a href="#section2">Click for roast type</a>
+            </section>
+        </div>
+
+        <div class="section3" id="section1" style="background-color:whitesmoke">
+            <section class="sect3div1">
+                <img src="images/Civet.png" class="civetPic" alt="Civet Coffee Beans">
+            </section>
+            <section class="sect3div2">
+                <h1>Civet Cat Coffee Beans</h1>
+                <p>The civet cat coffee, or also known as Kopi Luwak or cat poop coffee, is one of the most expensive coffee in the world. The palm civet usually prefer to eat the ripest coffee cherries and during digestion a unique fermentation occurs which give it its special flavour. It certainly is a must try cup of coffee.<p>
+                    <a href="#section2">Click for roast type</a>
+            </section>
+        </div>
+
+        <div class="parallaxImg2">
+            <div class="caption2">
+                <span class="border">ROAST TYPE</span>
+            </div>
+        </div>
+
+        <div class="roastType" id="section2" style="background-color:papayawhip">
+            <h1 class="title">Roast Level</h1>
+            <div class="section4">
+                <section class="roast1">
+                    <img src="images/dark roast.jpg" class="darkRoast" alt="dark roast" />
+                    <h4>Dark Roast</h4>
+                    <p>Coffee will generally have a bitter and smoky or even burnt taste. Most dark roast are used for expresso blends.</p>
+                </section>
+
+                <section class="roast2">
+                    <img src="images/medium roast.jpg" class="mediumRoast" alt="dark roast" />
+                    <h4>Medium Roast</h4>
+                    <p>More caffine as compared to dark roast equipped with more balanced flavour, aroma and acidity.</p>
+                </section>
+
+                <section class="roast3">
+                    <img src="images/light roast.jpg" class="lightRoast" alt="dark roast" />
+                    <h4>Light Roast</h4>
+                    <p>Contains higher levels of caffine and retains more original flavours. Has a toasted grain taste and pronounced acidiy.</p>
+                    <br />
+                </section>
+            </div>
+            <a href="#section1">Click for coffee description</a>
+        </div>
+        <div class="parallaxImg3">
+            <div class="caption3">
+                <span class="border">IMPORT FORM</span>
+            </div>
+        </div>
+
+        <div class="form" style="background-color:azure">
+            <form>
+                <h1 align="center" class="title">Import Form</h1>
+                <div class="formqns">
+                    <label for="Coffee type">Coffee Type: </label>
+                    <select required id="selectedCoffee" onchange="calculateCoffee()">
+                        <option value="" disabled selected>Please select coffee</option>
+                        <option>Arabica Coffee Beans</option>
+                        <option>Robusta Coffee Beans</option>
+                        <option>Civet Cat Coffee Beans</option>
+                    </select>
+
+                    <label for="Roast">Roast: </label>
+                    <select required id="selectedRoast" onchange="calculateCoffee()">
+                        <option value="" disabled selected>Please select roast</option>
+                        <option>Dark Roast</option>
+                        <option>Medium Roast</option>
+                        <option>Light Roast</option>
+                    </select><br /><br />
+
+                    <label for="quantity">Quantity: </label>
+                    <input required type="number" id="quantityInput" onchange="calculateCoffee()" min="1" max="10" value="1">
+                    </br><br />
+
+                    <label for="name">Name: </label>
+                    <input required type="text" id="customerName" placeholder="Please enter your name">
+                    </br><br />
+
+                    <label for="country">Country: </label>
+                    <input required type="text" id="countryInput" onchange="countryTextUpdate()" placeholder="Please enter country">
+                    <br /><br />
+
+                    <label for="email">Email: </label>
+                    <input required type="email" id="emailInput" placeholder="Please enter your email" />
+                    <br /><br />
+
+                    <input type="submit" value="Submit" onsubmit="submission()">
+                    <input type="reset">
+                    </br><br />
+
+                    <p id="totalCoffee" class="CoffeeText"></p>
+                    <p id="countryText" class="countryNoticeText"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/coffee.js"></script>
+</body>
+scroll-behavior: smooth;
+</html>
