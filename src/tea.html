@@ -15,6 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/teaco.js"></script>
+        <script type="text/javascript" src="js/tea.js"></script>
     </head>
     <body>
         <header id="header"></header>
@@ -22,12 +23,21 @@
             <div class="tea_wrapper">
                 <div class="tea_container">
                     <div class="tea_text">
-                        <div>
-                            <p class="tea_title fade" id="tea_title">Tea & Infusions</p>
-                            <p class="tea_caption fade" id="tea_caption">
-                                Fill up your cup with our<br> latest
-                                and greatest blend<br> of herbs and spices
-                            </p>
+                        <div class="tea_desc_div">
+                            <div>
+                                <p class="tea_title" id="tea_title">Tea & Infusions</p>
+                                <p class="tea_caption" id="tea_caption">
+                                    Fill up your cup with our<br> latest
+                                    and greatest blend<br> of herbs and spices
+                                </p>
+                            </div>
+                            <div class="buttonDiv">
+                                <button class="tea_button1 tea_button" id="teaButton">
+                                    <span>
+                                        Get Started
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -36,7 +46,7 @@
         <main>
             <section>
                 <div class="tea_wrapper">
-                    <div class="product_container">
+                    <div class="product_container" id="productContainer">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -57,7 +67,7 @@
                                     <div class="product product2">
                                         <div class="tea">
                                             <p class="product_name">Vanilla Slice</p>
-                                            <p class="product_desc">One of the most recognizable flavours of tea in the world. A quintessential afternoon tea.</p>
+                                            <p class="product_desc">A gorgeously pink infusion that is a sweet treat and a decadent delight.</p>
                                             <img src="images/vanillaslice.png" alt="vanillaslice" width="70%"/>
                                         </div>
                                     </div>
@@ -66,7 +76,7 @@
                                     <div class="product product3">
                                         <div class="tea">
                                             <p class="product_name">Green Rose</p>
-                                            <p class="product_desc">One of the most recognizable flavours of tea in the world. A quintessential afternoon tea.</p>
+                                            <p class="product_desc">Vibrant green tea blended with rose petals and tropical fruits for a bold taste sensation.</p>
                                             <img src="images/greenrose.png" alt="greenrose" width="70%"/>
                                         </div>
                                     </div>
