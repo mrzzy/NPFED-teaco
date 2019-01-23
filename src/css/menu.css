@@ -1,0 +1,193 @@
+.menu_wrapper {
+    display: flex;
+    padding: 0 2%;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: right;
+    background-color: #ffc2c7;
+    background-image: url(../images/menuBG.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+}
+
+.menu_text {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.menu_desc_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+.menu_title {
+    color: #08415c;
+    font-weight: 700;
+    font-size: 6em;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_caption {
+    color: #323029;
+    font-family: 'Open Sans', serif;
+    font-size: 3.6em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.menu_button {
+    color: white;
+    background-color: rgba(229, 115, 115, 0.8);
+    letter-spacing: .5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1.8% 2%;
+    width: 30%;
+    font-size: 1.7em;
+    border: 0;
+    opacity: 0;
+}
+
+.menu_button1 {
+    background-color: rgba(229, 115, 115, 0.8);
+}
+
+.menu_button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(229, 115, 115, 1);
+
+}
+
+.food_container {
+    display: flex;
+    width: 96%;
+    background-color: #93b7be;
+    margin: 0 2% 0 2%;
+    padding: 2.5% 0 2.5% 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food_col {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.menu_label {
+    color: #323029;
+    font-family: 'Open Sans', serif;
+    font-size: 3.6em;
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.food_name_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-right: 15%;
+}
+
+.food_name {
+    font-family: 'Muli', sans-serif;
+    color: #EEEBDE;
+    font-weight: 600;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food_desc {
+    text-align: left;
+    font-size: 1.4em;
+    padding-right: 15%;
+}
+@media screen and (max-width: 750px) {
+    .products {
+        flex-direction: column;
+    }
+    .menu {
+        width: 95%;
+        margin-bottom: 2%;
+    }
+
+    .menu_container {
+        justify-content: space-around;
+    }
+
+    .menu_text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    .menu_desc_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 75vh;
+        width: 100%;
+    }
+
+    .buttonDiv {
+        width: 35%;
+    }
+
+    .menu_title {
+        font-size: 3em;
+        text-align: center;
+        color: #eb9486;
+    }
+
+    .menu_caption {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .menu_button {
+        font-size: 1.3em;
+        height: 7vh;
+        width: 80%;
+        flex-shrink: 0;
+    }
+
+
+    .menu_wrapper {
+        padding: 0;
+    }
+
+    .menu_hover {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menu:hover {
+        width: 28%;
+        height: 83vh;
+        transition: all 0.35s ease;
+    }
+}
