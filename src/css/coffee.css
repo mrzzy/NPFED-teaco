@@ -1,0 +1,122 @@
+﻿main {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #777;
+}
+
+header, footer {
+    font-family: Roboto;
+}
+
+.parallaxImg1 {
+    background-image: url('../images/backgroundImg1.jpg');
+    height: 100vh;
+}
+
+.parallaxImg2 {
+    background-image: url('../images/backgroundImg2.jpg');
+    height: 100vh;
+}
+
+.parallaxImg3 {
+    background-image: url('../images/backgroundImg3.jpg');
+    height: 100vh;
+}
+
+.parallaxImg1, .parallaxImg2, .parallaxImg3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption1, .caption2, .caption3 {
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+    .caption1 span.border, .caption2 span.border, .caption3 span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: 10px;
+    }
+
+.section1, .section2, .section3, .roastType, .form {
+    height: 400px;
+    font-size: 31px;
+    padding:70px 70px
+}
+
+.roastType, .form {
+    height: 800px;
+}
+
+a {
+    font-size: 25px;
+}
+
+.arabicaPic, .robustaPic, .civetPic {
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    transition: transform 0.3s linear;
+    width: 360px;
+    height: 360px;
+}
+
+.darkRoast, .mediumRoast, .lightRoast {
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    border-radius: 30px 30px;
+    transition: transform 0.3s linear;
+    width: 300px;
+    height: 300px;
+}
+
+    .arabicaPic:hover, .robustaPic:hover, .civetPic:hover, .darkRoast:hover, .mediumRoast:hover, .lightRoast:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.25);
+    }
+
+section {
+    margin: 10px;
+    padding: 20px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.section1, .section2, .section3, .section4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1em;
+}
+
+.sect1div1, .sect2div1, .sect3div1 {
+    flex-basis: 30%;
+}
+
+.sect1div2, .sect2div2, .sect3div2 {
+    flex-basis:50%;
+}
+
+.title {
+    color: gray;
+    line-height: 1em;
+    font-size: 60px;
+}
+
+.formqns {
+    margin:auto;
+    width: 50%;
+    font-size: 25px;
+}
