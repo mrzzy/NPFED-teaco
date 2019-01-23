@@ -99,7 +99,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-radius: 4px;
+    padding-bottom: 2%;
+    border-radius: 7px;
+    border: 1px solid #AEACA5;
 }
 @media screen and (max-width: 600px) {
     .products {
