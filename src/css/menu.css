@@ -123,31 +123,96 @@
     padding-right: 15%;
 }
 
+.formcontainer {
+    background-color: #ECF8F8;
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
 .catering_form {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    font-size: 1.5em;
-    margin-top: 3%;
+    background-color: #B9CFD4;
+    border-radius: 6px;
 }
 
 .catering_form p {
-    text-align: center;
     font-size: 2.5em;
-    background-color: #ffc2c7;
-    width: 23%;
-    color: #323029;
-    padding: 1% 1% 1% 1%;
-    margin: auto;
+    text-align: center;
+    margin:0;
+    padding: 1% 0 1% 0;
+    font-family: 'Open Sans', serif;
+    font-weight: 800;
+    width: 100%;
+    border-bottom: 1px solid rgba(50, 48, 41, 0.6); 
 }
 
-.catering {
-    width: 10%;
-    height: 5vh;
-    text-align: center;
-    background-color: #ffc2c7;
-    color: #08415c;
-    font-size: 2.5em;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -16px;
 }
+
+.col {
+    width: 40%;
+    padding: 0 16px;
+}
+
+.formcontainer1 {
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.packageSelect {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn {
+  background-color: rgba(229, 115, 115, 0.8);
+  font-family: 'Open Sans', serif;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  justify-self: right;
+}
+
+
+.btn:hover {
+  background-color: rgba(229, 115, 115, 1);
+}
+
+
+
+form {
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 750px) {
     .products {
         flex-direction: column;
@@ -220,6 +285,33 @@
         width: 100%;
     }
 
+    .row {
+        flex-direction: column-reverse;
+        padding-left: 5%;
+    }
+
+    .col {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .formcontainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .catering_form {
+        width: 95%;
+    }
+
+    .col {
+        width: 80%;
+        align-items: center;
+    }
+
+    .btn {
+        order: -1;
+    }
 }
 
 @media screen and (min-width: 750px) {
