@@ -91,6 +91,7 @@ section {
     display: flex;
     flex-direction: column;
     flex: auto;
+    align-items: center;
 }
 
 .section1, .section2, .section3, .section4{
