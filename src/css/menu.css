@@ -122,6 +122,32 @@
     font-size: 1.4em;
     padding-right: 15%;
 }
+
+.catering_form {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+
+.catering_form p {
+    text-align: center;
+    font-size: 2.5em;
+    background-color: #ffc2c7;
+    width: 23%;
+    color: #323029;
+    padding: 1% 1% 1% 1%;
+    margin: auto;
+}
+
+.catering {
+    width: 10%;
+    height: 5vh;
+    text-align: center;
+    background-color: #ffc2c7;
+    color: #08415c;
+    font-size: 2.5em;
+}
 @media screen and (max-width: 750px) {
     .products {
         flex-direction: column;
@@ -182,6 +208,18 @@
     .menu_hover {
         width: 100%;
     }
+
+    .food_container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 3%;
+    }
+
+    .food_col {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 750px) {
