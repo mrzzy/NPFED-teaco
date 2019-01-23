@@ -11,7 +11,7 @@
 function renderHeader() {
     // Disable interactivity for expanded responsive header
     if($("header").hasClass("expanded")) return;
-    const threshold = 100;
+    const threshold = 140;
 
     // Check if exceeded threshold
     if($(document).scrollTop() > threshold)
