@@ -13,3 +13,8 @@ body {
 .icon {
     object-fit: contain;
 }
+
+main {
+    text-align: center;
+}
+
