@@ -64,12 +64,24 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #a9d5cb;
-    padding: 2%;
 }
 
-.products {
-    display: flex;
-    justify-content: space-evenly;
+.product {
+    width: 100%;
+    height: 100%;
+    padding: 3% 0 3% 0;
+}
+
+.product1 {
+    background-color: #a9d5cb;
+}
+
+.product2 {
+    background-color: #FF8552;
+}
+
+.product3 {
+    background-color: #297373;
 }
 
 .product_name {
@@ -99,9 +111,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 2%;
+    padding: 1% 0 1% 0;
     border-radius: 7px;
     border: 1px solid #AEACA5;
+    margin: auto;
 }
 @media screen and (max-width: 600px) {
     .products {
