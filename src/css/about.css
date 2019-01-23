@@ -1,0 +1,57 @@
+/*
+ * css/about.css
+ * TEACO
+ * Teaco About Page Styles
+*/
+
+section#about {
+    display: inline-block;
+    width: 80vw;
+
+    text-align: left;
+}
+
+h1.tagline {
+    max-width: 72vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 6.4em;
+}
+
+.graphic.grid-container {
+    max-width: 74vw;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(25, 5em);
+    grid-gap: 0.8em;
+}
+
+.graphic img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.graphic img.portrait {
+    grid-row: span 8;
+    grid-column: span 8;
+}
+
+.graphic img.landscape {
+    grid-row: span 6;
+    grid-column: span 10;
+}
+
+.graphic .description {
+    display: inline;
+    margin: 0;
+    grid-column: span 10;
+    grid-row: span 2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.graphic .description.large {
+    font-size: 2.2em;
+}
