@@ -38,3 +38,17 @@ main .glossary img {
 main a:hover img {
     opacity: 0.88;
 }
+
+@media only screen and (max-width: 480pt) {
+    main .glossary .grid-container {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 2vh;
+        justify-content: center;
+    }
+
+    main .glossary img {
+        width: 60vw;
+    }
+}
+
